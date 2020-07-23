@@ -1,0 +1,376 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-title
+{
+    color: white;
+}
+
+.admin-headband-container
+{
+    height: 6rem;
+    width: 100%;
+    background-color: #353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.admin-headband-row
+{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-head-logo
+{
+    height: 4rem;
+}
+
+.admin-head-user-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1E90FF;
+}
+
+.admin-user-info
+{
+    font-size: 1.5rem;
+}
+
+.admin-head-user-container i
+{
+    margin-left: 1rem;
+}
+
+/* ---- menu ---- */
+body{
+    font-family:sans-serif;
+}
+
+#menu_active {
+    position: fixed;
+}
+
+#wrapper {
+    padding-left: 200px;
+    transition: all 1s;
+}
+
+.side-nav-icon
+{
+    margin-right: 0.5rem;
+}
+
+#menu_active:checked + #wrapper {
+    padding-left: 44px;
+    transition: all 1s;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 216px;
+    background-color: #353535;
+    transition: all 1s;
+}
+
+#menu_active:checked + #wrapper #menu {
+    left: -160px;
+    transition: all 1s;
+}
+
+#menu_active:checked + #wrapper .fa-bars, #wrapper i.fa-arrow-left {
+    display: block;
+}
+
+#menu_active:checked + #wrapper .fa-arrow-left, #wrapper i.fa-bars {
+    display: none;
+}
+
+#menu i.side-nav-icon{
+    width:40px;
+    text-align:center;
+}
+
+#site-name {
+    color: white;
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    padding: 10px 0 10px 10px;
+}
+
+#site-name i.side-nav-icon {
+    float: right;
+}
+
+#site-name label {
+    color: white;
+    font-size: 30px;
+}
+
+#menu ul {
+    padding: 0;
+}
+
+#menu ul li {
+    color: white;
+    list-style: none;
+    border-left: 4px solid transparent;
+    padding: 10px 0 10px 10px;
+}
+
+#menu ul li:hover {
+    color: #1E90FF;
+    border-left: 4px solid #1E90FF;
+}
+
+#menu ul li:hover i {
+    color: #1E90FF;
+}
+
+#menu ul li i.side-nav-icon {
+    float: right;
+    font-size: 24px;
+}
+
+#menu ul a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 100%;
+}
+
+#menu_active
+{
+    margin-top: 6rem;
+}
+
+#menu
+{
+    margin-top: 6rem;
+}
+
+#page-content
+{
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.side-nav-link
+{
+    margin-top: 1rem;
+}
+
+.logout-link
+{
+    align-self: flex-end;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px 0;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: flex-end;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #353535;
+    /*min-width: 250px;*/
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 4rem 0 0 3rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #1E90FF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+/*.dropdown-content a:hover {background-color: #ddd;}*/
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: transparent;}
+
+
+/* ---- menu end ---- */
+
+/* ---- all page standard ---- */
+
+.ap-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    border-radius: 10px;
+    box-shadow: 2px 8px 20px #c2c2c2;
+    padding: 1.5rem 2rem;
+}
+
+.ap-head-container
+{
+    display: flex;
+    align-items: center;
+}
+
+.ap-head-nav
+{
+    display: flex;
+    align-items: flex-end;
+    height: 1.75rem;
+}
+
+.ap-f-link
+{
+    margin: 0 0.75rem 0 2rem;
+}
+
+.ap-head-link
+{
+    margin: 0 0.75rem 0 0.75rem;
+}
+
+.ap-h-l-s
+{
+    font-size: 1.25rem;
+    color: #353535;
+    text-decoration: none;
+}
+
+.ap-h-l-s:hover
+{
+    font-size: 1.25rem;
+    color: #1E90FF;
+    text-decoration: underline #1E90FF;
+}
+
+.ap-f-l-active
+{
+    font-size: 1.25rem;
+    color: #1E90FF;
+    text-decoration: underline #1E90FF;
+}
+
+.ap-hide
+{
+    display: none !important;
+}
+
+.sticky
+{
+    position: fixed;
+    top: 0;
+}
+
+/* ---- test section ---- */
+.nav-li
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s-s-i
+{
+    margin-left: 1rem;
+    color: white;
+}
+
+.s-s-i:hover
+{
+    color: #1E90FF;
+}
+
+.show {
+    display: block !important;
+}
+
+.drop-content
+{
+    display: none;
+    background-color: #353535;
+    min-width: 160px;
+    width: calc(100% - 1rem);
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 1rem 0 1rem 1rem;
+}
+
+.mgt-dd
+{
+    margin-top: 1.5rem;
+}
+
+.dd-c-l
+{
+    padding-left: 1rem;
+}
+
+.dd-c-l:hover
+{
+    border-left: 2px solid white !important;
+    padding-left: calc(1rem - 2px);
+}
+
+#menu
+{
+    overflow: scroll;
+}
+
+#menu::-webkit-scrollbar
+{
+    display: none;
+}
+
+#menu
+{
+    overflow: -moz-scrollbars-none;
+}
+
+#menu
+{
+    -ms-overflow-style: none;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin nav example</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://kit.fontawesome.com/7c6feae621.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<div id="sticky_header" class="admin-headband-container sticky">
+	<div class="admin-headband-row">
+		<div class="admin-head-logo-container">
+			<h1 class="top-title">Espace Admin</h1>
+		</div>
+		<div class="admin-head-user-container">
+
+			<div id="dd-toggle" class="dropdown">
+				<button class="dropbtn">
+					<span class="admin-user-info">Hello Pg</span>
+					<i class="fas fa-user-circle fa-2x"></i>
+				</button>
+				<div id="dd-content" class="dropdown-content">
+					<a class="top-right-dd-l" href='#'>
+						<i class="fas fa-user-cog side-nav-icon"></i>
+						Mes informations
+
+					</a>
+					<a class="top-right-dd-l" href='#'>
+						<i class="fas fa-sign-out-alt side-nav-icon"></i>
+						Déconnexion
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<input type='checkbox' id='menu_active' checked/>
+<div id='wrapper' class='active'>
+	<div id='menu'>
+		<span id='site-name'><label for='menu_active'><i class="fa fa-arrow-left side-nav-icon"></i><i class="fa fa-bars side-nav-icon"></i></label></span>
+		<ul class="nav-links">
+			<a id='home' class="side-nav-link" href='#'>
+				<li class="nav-li">
+					<span class="side-span">Accueil</span>
+					<i class="fas fa-home side-nav-icon"></i>
+				</li>
+			</a>
+			<a id='medias' class="side-nav-link ddbtn" href='#'>
+				<li class="nav-li">
+					<span class="side-span">Médias<i class="fas fa-chevron-right s-s-i"></i></span>
+					<i class="fas fa-file-image side-nav-icon"></i>
+				</li>
+			</a>
+			<div id="medias_dd" class="drop-content">
+				<a href="#" class="dd-c-l">Les médias</a>
+				<a href="#" class="dd-c-l mgt-dd">Ajouter un média</a>
+			</div>
+			<a id='folders' class="side-nav-link" href='#'>
+				<li class="nav-li">
+					<span class="side-span">Dossiers<i class="fas fa-chevron-right s-s-i"></i></span>
+					<i class="fas fa-folder side-nav-icon"></i>
+				</li>
+			</a>
+			<div id="folders_dd" class="drop-content">
+				<a href="#" class="dd-c-l">Les dossiers</a>
+				<a href="#" class="dd-c-l mgt-dd">Ajouter un dossier</a>
+			</div>
+			<a id='articles' class="side-nav-link" href='#'>
+				<li class="nav-li">
+					<span class="side-span">Articles<i class="fas fa-chevron-right s-s-i"></i></span>
+					<i class="far fa-newspaper side-nav-icon"></i>
+				</li>
+			</a>
+			<div id="articles_dd" class="drop-content">
+				<a href="#" class="dd-c-l">Les articles</a>
+				<a href="#" class="dd-c-l mgt-dd">Ajouter un article</a>
+			</div>
+			<a id='categories' class="side-nav-link" href='#'>
+				<li class="nav-li">
+					<span class="side-span">Catégories<i class="fas fa-chevron-right s-s-i"></i></span>
+					<i class="far fa-lightbulb side-nav-icon"></i>
+				</li>
+			</a>
+			<div id="categ_dd" class="drop-content">
+				<a href="#" class="dd-c-l">Les catégories</a>
+				<a href="#" class="dd-c-l mgt-dd">Ajouter une catégorie</a>
+			</div>
+			<a id='pages' class="side-nav-link" href='#'>
+				<li class="nav-li">
+					<span class="side-span">Pages</span>
+					<i class="fas fa-file-alt side-nav-icon"></i>
+				</li>
+			</a>
+			<a id='contact' class="side-nav-link" href='#'>
+				<li class="nav-li">
+					<span class="side-span">Contact</span>
+					<i class="fas fa-envelope side-nav-icon"></i>
+				</li>
+			</a>
+			<a id='users' class="side-nav-link" href='#'>
+				<li class="nav-li">
+					<span class="side-span">Utilisateurs<i class="fas fa-chevron-right s-s-i"></i></span>
+					<i class="fas fa-users-cog side-nav-icon"></i>
+				</li>
+			</a>
+			<div id="users_dd" class="drop-content">
+				<a href="#" class="dd-c-l">Les utilisateurs</a>
+				<a href="#" class="dd-c-l mgt-dd">Ajouter un utilisateur</a>
+				<a href="#" class="dd-c-l mgt-dd">Mes informations</a>
+			</div>
+			<a id='parameters' class="side-nav-link" href='#'>
+				<li class="nav-li">
+					<span class="side-span">Paramètres</span>
+					<i class="fas fa-cogs side-nav-icon"></i>
+				</li>
+			</a>
+			<a id='logout' class="side-nav-link logout-link" href='#'>
+				<li class="nav-li">
+					<span class="side-span">Déconnexion</span>
+					<i class="fas fa-sign-out-alt side-nav-icon"></i>
+				</li>
+			</a>
+		</ul>
+	</div>
+
+	<div id='page-content'>
+		<h2>Ici se trouve le contenu de la page</h2>
+	</div>
+</div>
+<script type="text/javascript">
+	document.getElementById('page-content').style.paddingTop = document.getElementById('sticky_header').offsetHeight+'px';
+</script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
